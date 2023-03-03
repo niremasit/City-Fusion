@@ -1,6 +1,64 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>City Fusion</h1>
+<div class="d-flex justify-content-center">
+  <h1>City Fusion</h1>
+</div>
+
+<div class="container text-center">
+  <div class="row align-items-center m-5">
+    </form id="form"> <!--ID = FORM-->
+      <div class="col">
+        <select class="ville1 form-select" aria-label="Default select example"> <!--ID = city1-->
+          <option selected>Select the first city</option>
+          <option id="Bordeaux1" value="1">Bordeaux</option>
+          <option id="Toulouse1" value="2">Toulouse</option>
+          <option id="Paris1" value="3">Paris</option>
+        </select>
+      </div>
+
+      <div class="col">
+        <select class="ville2 form-select" aria-label="Default select example"> <!--ID = city2-->
+          <option selected>Select the second city</option>
+          <option id="Bordeaux2" value="1">Bordeaux</option>
+          <option id="Toulouse2" value="2">Toulouse</option>
+          <option id="Paris2" value="3">Paris</option>
+        </select>
+      </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <button class="btn btn-primary center m-5" type="submit" onclick="fusion()">Fusion</button>
+</div>
+</form>
+
+<p id="test"></p>
+<div class="lesImages d-flex justify-content-center">
+  <img id="image" src="https://rb.gy/ajsqx1">
+</div>
+
+
+<!----------------------------------------------------------------------------------------------------SCRIPT-->
+<script>
+  const form = document.querySelector("#form");
+  let Bordeaux1 = document.querySelector("#Bordeaux1");
+  let Toulouse1 = document.querySelector("#Toulouse1");
+  let Paris1 = document.querySelector("#Paris1");
+
+  let Bordeaux2 = document.querySelector("#Bordeaux2");
+  let Toulouse2 = document.querySelector("#Toulouse2");
+  let Paris2 = document.querySelector("#Paris2");
+
+  function fusion() {
+    document.getElementById("test").innerHTML =  "test reussi";
+    //document.getElementById('image').src ="https://rb.gy/cbr6lt";
+    
+    if (form == Bordeaux1){ //Bordeaux x Toulouse
+      document.getElementById('image').src ="https://rb.gy/cbr6lt";
+    }
+  }
+</script>
+
 
 <!-- //CODE DE BASE DU SCAFFOLD D'ARTICLE
 <div id="articles">
@@ -14,29 +72,3 @@
 
 <%= link_to "New article", new_article_path %>
 -->
-<p>Test</p>
-<div class="container text-center">
-  <div class="row align-items-center">
-    </form>
-      <div class="col">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Select the first city</option>
-          <option value="1">Bordeaux</option>
-          <option value="2">Toulouse</option>
-          <option value="3">Paris</option>
-        </select>
-      </div>
-
-      <div class="col">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Select the second city</option>
-          <option value="1">Bordeaux</option>
-          <option value="2">Toulouse</option>
-          <option value="3">Paris</option>
-        </select>
-      </div>
-  </div>
-</div>
-
-<button class="btn btn-primary center" type="submit">Fusion</button>
-</form>
