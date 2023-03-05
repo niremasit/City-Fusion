@@ -18,22 +18,23 @@
   <option value="toulouse2">Toulouse</option>
 </select>
 
-<button onclick="getSelectedValues()">Fusion</button>
+<button onclick="fusion()">Fusion</button>
 
 <div class="lesImages d-flex justify-content-center">
-  <img id="image" src="https://rb.gy/ajsqx1">
+  <img id="image" src="https://rb.gy/jkug8e">
 </div>
 
 <script>
-  function getSelectedValues() {
+  function fusion() {
     const select1 = document.getElementById("select1");
     const select2 = document.getElementById("select2");
     const value1 = select1.value;
     const value2 = select2.value;
-    console.log("Selected value 1: " + value1);
-    console.log("Selected value 2: " + value2);
+    const image = document.getElementById("image");
+    //console.log("Selected value 1: " + value1);
+    //console.log("Selected value 2: " + value2);
 
-    if (value1 == "Bordeaux"){
+    if (value1 === "Bordeaux"){
       document.getElementById('image').src ="https://rb.gy/cbr6lt";
     }
 
