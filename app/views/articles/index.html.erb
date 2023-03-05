@@ -34,6 +34,39 @@
     //console.log("Selected value 1: " + value1);
     //console.log("Selected value 2: " + value2);
 
+    if (value1 === "bordeaux1" && value2 === "toulouse2") { //BORDEAUX x TOULOUSE
+      image.src ="https://rb.gy/cbr6lt";
+    } else if (value1 === "bordeaux1" && value2 === "paris2") { //BORDEAUX x PARIS
+      image.src ="https://rb.gy/wwiklu";
+    } else if (value1 === "bordeaux1" && value2 === "bordeaux2") { //BORDEAUX x BORDEAUX (error 2)
+      image.src ="https://rb.gy/rw3mvd";
+    } else if (value1 === "bordeaux1" && value2 === "default2") { //BORDEAUX x NULL (error 1)
+      image.src ="https://rb.gy/sylnl2";
+    } else if (value1 === "paris1" && value2 === "toulouse2") { //PARIS x TOULOUSE
+      image.src ="https://rb.gy/ajsqx1";
+    } else if (value1 === "paris1" && value2 === "bordeaux2") { //PARIS x BORDEAUX
+      image.src ="https://rb.gy/wwiklu";
+    } else if (value1 === "paris1" && value2 === "paris2") { //PARIS x PARIS (error 2)
+      image.src ="https://rb.gy/rw3mvd";
+    } else if (value1 === "paris1" && value2 === "default2") { //PARIS x NULL (error 1)
+      image.src ="https://rb.gy/sylnl2";
+    } else if (value1 === "toulouse1" && value2 === "paris2") { //TOULOUSE x PARIS
+      image.src ="https://rb.gy/ajsqx1";
+    } else if (value1 === "toulouse1" && value2 === "bordeaux2") { //TOULOUSE x BORDEAUX
+      image.src ="https://rb.gy/cbr6lt";
+    } else if (value1 === "toulouse1" && value2 === "toulouse2") { //TOULOUSE x TOULOUSE (error 2)
+      image.src ="https://rb.gy/rw3mvd";
+    } else if (value1 === "toulouse1" && value2 === "default2") { //TOULOUSE x NULL (error 1)
+      image.src ="https://rb.gy/sylnl2";
+    } else if (value1 === "default1" && value2 === "bordeaux2") { //NULL x BORDEAUX (error 1)
+      image.src ="https://rb.gy/sylnl2";
+    } else if (value1 === "default1" && value2 === "paris2") { //NULL x PARIS (error 1)
+      image.src ="https://rb.gy/sylnl2";
+    } else if (value1 === "default1" && value2 === "toulouse2") { //NULL x TOULOUSE (error 1)
+      image.src ="https://rb.gy/sylnl2";
+    }
+  }
+/*
     if (value1 === "default1" && value2 === "default2") { //sample
       document.getElementById('image').src ="https://rb.gy/jlm13s";
     } else if (value1 === "default1" && value2 === "paris2", "bordeaux2", "toulouse2") { //error 1
@@ -41,15 +74,27 @@
     } else if (value1 === "paris1", "bordeaux1", "toulouse1" && value2 === "default2") { //erorr 1
       document.getElementById('image').src ="https://rb.gy/sylnl2";
     }
+    
+    if (value1 === "bordeaux1" && value2 === "bordeaux2") { //erorr 2
+      document.getElementById('image').src ="https://rb.gy/rw3mvd";
+    }
+    
+    if (value1 === "paris1" && value2 === "paris2") { //erorr 2
+      document.getElementById('image').src ="https://rb.gy/rw3mvd";
+    }
+    
+    if (value1 === "toulouse1" && value2 === "toulouse2") { //erorr 2
+      document.getElementById('image').src ="https://rb.gy/rw3mvd";
+    }
 
   }
   /* IMAGES LINKS:
   SAMPLE : https://rb.gy/jlm13s
   ERROR1 : https://rb.gy/sylnl2
   ERROR2 : https://rb.gy/rw3mvd
-  BORDEAUX x PARIS : https://rb.gy/
+  BORDEAUX x PARIS : https://rb.gy/wwiklu
   BORDEAUX x TOULOUSE : https://rb.gy/cbr6lt
-  PARIS x TOULOUSE : https://rb.gy/
+  PARIS x TOULOUSE : https://rb.gy/ajsqx1
   */
 </script>
 
