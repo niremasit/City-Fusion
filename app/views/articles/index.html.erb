@@ -1,24 +1,30 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center m-3">
   <h1>City Fusion</h1>
 </div>
 
-<select id="select1">
-  <option value="default1">Sélectionnez une ville</option>
-  <option value="bordeaux1">Bordeaux</option>
-  <option value="paris1">Paris</option>
-  <option value="toulouse1">Toulouse</option>
-</select>
+<div class="row align-items-center m-3">
+  <div class="d-flex justify-content-center"> 
+    <select id="select1">
+      <option value="default1">Sélectionnez une ville</option>
+      <option value="bordeaux1">Bordeaux</option>
+      <option value="paris1">Paris</option>
+      <option value="toulouse1">Toulouse</option>
+    </select>
 
-<select id="select2">
-  <option value="default2">Sélectionnez une ville</option>
-  <option value="bordeaux2">Bordeaux</option>
-  <option value="paris2">Paris</option>
-  <option value="toulouse2">Toulouse</option>
-</select>
+    <select id="select2">
+      <option value="default2">Sélectionnez une ville</option>
+      <option value="bordeaux2">Bordeaux</option>
+      <option value="paris2">Paris</option>
+      <option value="toulouse2">Toulouse</option>
+    </select>
+  </div>
+</div>
 
-<button onclick="fusion()">Fusion</button>
+<div class="d-flex justify-content-center m-3">
+  <button class="btn btn-primary" onclick="fusion()">Fusion</button>
+</div>
 
 <div class="lesImages d-flex justify-content-center">
   <img id="image" src="https://rb.gy/jlm13s">
@@ -31,7 +37,7 @@
     const value1 = select1.value;
     const value2 = select2.value;
     const image = document.getElementById("image");
-    //console.log("Selected value 1: " + value1);
+    //console.log("Selected value 1: " + value1); justify-content-lg-around
     //console.log("Selected value 2: " + value2);
 
     if (value1 === "bordeaux1" && value2 === "toulouse2") { //BORDEAUX x TOULOUSE
