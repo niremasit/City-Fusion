@@ -21,7 +21,7 @@
 <button onclick="fusion()">Fusion</button>
 
 <div class="lesImages d-flex justify-content-center">
-  <img id="image" src="https://rb.gy/jkug8e">
+  <img id="image" src="https://rb.gy/jlm13s">
 </div>
 
 <script>
@@ -34,11 +34,23 @@
     //console.log("Selected value 1: " + value1);
     //console.log("Selected value 2: " + value2);
 
-    if (value1 === "Bordeaux"){
-      document.getElementById('image').src ="https://rb.gy/cbr6lt";
+    if (value1 === "default1" && value2 === "default2") { //sample
+      document.getElementById('image').src ="https://rb.gy/jlm13s";
+    } else if (value1 === "default1" && value2 === "paris2", "bordeaux2", "toulouse2") { //error 1
+      document.getElementById('image').src ="https://rb.gy/sylnl2";
+    } else if (value1 === "paris1", "bordeaux1", "toulouse1" && value2 === "default2") { //erorr 1
+      document.getElementById('image').src ="https://rb.gy/sylnl2";
     }
 
   }
+  /* IMAGES LINKS:
+  SAMPLE : https://rb.gy/jlm13s
+  ERROR1 : https://rb.gy/sylnl2
+  ERROR2 : https://rb.gy/rw3mvd
+  BORDEAUX x PARIS : https://rb.gy/
+  BORDEAUX x TOULOUSE : https://rb.gy/cbr6lt
+  PARIS x TOULOUSE : https://rb.gy/
+  */
 </script>
 
 <!--
